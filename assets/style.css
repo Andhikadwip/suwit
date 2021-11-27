@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+body {
+  background-image: url("img/bg.png");
+  font-family: "Fredoka One", cursive;
+}
+img {
+  width: 130px;
+}
+.img-comp {
+  border-radius: 50%;
+  background-color: lightgreen;
+  box-shadow: 1px 1px 2px 2px salmon;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 0px;
+  position: relative;
+}
+h1,
+p {
+  text-align: center;
+}
+ul li {
+  display: inline;
+}
+ul {
+  padding-top: 45px;
+}
+.area-comp {
+  width: 560px;
+  height: 250px;
+  margin: 5px auto;
+  background-color: lightblue;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+.area-play {
+  width: 560px;
+  height: 250px;
+  margin: 5px auto;
+  background-color: lightgreen;
+  border-radius: 0px 0px 40px 40px;
+  position: relative;
+  /* padding-top: 80px; */
+  text-align: center;
+}
+.info {
+  width: 158px;
+  height: 60px;
+  border: 5px solid salmon;
+  z-index: 1;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 30px;
+  top: 46%;
+  position: absolute;
+  left: 36%;
+  color: salmon;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.8;
+}
+.batu,
+.gunting,
+.kertas {
+  border-radius: 50%;
+}
+.batu:hover,
+.gunting:hover,
+.kertas:hover {
+  background-color: lightblue;
+  box-shadow: 1px 1px 2px 2px salmon;
+  position: relative;
+  cursor: pointer;
+}
+.batu:active,
+.gunting:active,
+.kertas:active {
+  top: 2px;
+}
+@media screen and (max-width: 576px) {
+  body {
+    width: 600px;
+  }
+}
