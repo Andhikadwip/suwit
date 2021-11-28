@@ -83,23 +83,40 @@ ul {
   top: 2px;
 }
 @media screen and (max-width: 576px) {
-  body,
+  /* body,
   html {
     width: 500px;
-  }
+  } */
   .container {
     width: 350px;
     margin-left: 0px;
     margin-right: 0px;
   }
+  .area-comp,
+  .area-play {
+    width: 370px;
+  }
   h1,
   p {
-    padding-left: 100px;
+    padding-left: 20px;
+    padding-top: 2rem;
+    color: lightcoral;
+  }
+  p {
+    padding: 0;
+    color: lightseagreen;
   }
   .info {
-    left: 55%;
+    left: 30%;
   }
-  button {
-    margin-left: 244px;
+  ul {
+    padding: 0;
+    padding-top: 80px;
+  }
+  ul li {
+    display: inline;
+  }
+  ul li img {
+    width: 100px;
   }
 }
