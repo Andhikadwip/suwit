@@ -27,14 +27,32 @@ function getHasil(comp, player) {
 // });
 
 //CARA PENGULANGAN
+function putar() {
+  const gambar = ["batu", "gunting", "kertas"];
+  let i = 0;
+  const waktuMulai = new Date().getTime();
+  setInterval(function () {
+    if (new Date().getTime() - waktuMulai > 1000) {
+      clearInterval;
+      return;
+    }
 
-player.forEach((img) => {
+    imgComp.setAttribute("src", "assets/img/" + gambar[i++] + ".png");
+    if (i == gambar.length) {
+      i = 0;
+    }
+  }, 100);
+}
+
+player.forEach(function (img) {
   img.addEventListener("click", function () {
     const pilihanComp = getPilihanComp();
     const pilihanPlay = img.className;
     const hasil = getHasil(pilihanComp, pilihanPlay);
-
-    imgComp.setAttribute("src", "assets/img/" + pilihanComp + ".png");
-    info.innerHTML = hasil;
+    putar();
+    setTimeout(function () {
+      imgComp.setAttribute("src", "assets/img/" + pilihanComp + ".png");
+      info.innerHTML = hasil;
+    }, 1200);
   });
 });

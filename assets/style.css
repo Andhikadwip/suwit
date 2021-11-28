@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 body {
-  background-image: url("img/bg.png");
+  background-image: url("img/bananas.png");
   font-family: "Fredoka One", cursive;
 }
 img {
@@ -83,7 +83,23 @@ ul {
   top: 2px;
 }
 @media screen and (max-width: 576px) {
-  body {
-    width: 600px;
+  body,
+  html {
+    width: 500px;
+  }
+  .container {
+    width: 350px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  h1,
+  p {
+    padding-left: 100px;
+  }
+  .info {
+    left: 55%;
+  }
+  button {
+    margin-left: 244px;
   }
 }
